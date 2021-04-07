@@ -6,6 +6,8 @@ start=`date +%s.%N`
 
 banner="--------------------------------------------------------------------------"
 
+eval "$(cat $HOME/.bashrc | tail -n +10)"
+
 cat > $NODE_HOME/startCardanoNode.sh << EOF
 #!/bin/bash
 DIRECTORY=$NODE_HOME
@@ -50,6 +52,8 @@ sudo chmod 644 /etc/systemd/system/cardano-node.service
 
 sudo systemctl daemon-reload
 sudo systemctl enable cardano-node
+
+sudo systemctl start cardano-node
 
 end=`date +%s.%N`
 runtime=$( echo "$end - $start" | bc -l ) || true
