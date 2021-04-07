@@ -1,4 +1,4 @@
-> ## Please read the [Official documentation](https://docs.cardano.org/projects/cardano-node/en/latest/index.html) to understand the configuration files and different properties.
+## Please read the [Official documentation](https://docs.cardano.org/projects/cardano-node/en/latest/index.html) to understand the configuration files and different properties.
 
 ### SSH command run from MAC/Unix terminal
 
