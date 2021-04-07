@@ -5,7 +5,8 @@
 ### SSH command run from MAC/Unix terminal
 
 ```bash
-ssh -i <location to pem file> username@public_ip_adress
+chmod +x <location of the pem file>
+ssh -i <location of the pem file> username@public_ip_adress
 ```
 
 ### clone git repository
