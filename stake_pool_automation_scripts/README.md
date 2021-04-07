@@ -42,6 +42,17 @@ nohup ./oro-stake-pool-github.io/stake_pool_automation_scripts/02_build_node_and
 ./oro-stake-pool-github.io/stake_pool_automation_scripts/04_install_gLiveView_monitoring_tool.sh
 ```
 
+### Check DB Sync Status
+```bash
+bash $NODE_HOME/gLiveView.sh
+```
+
+----
+
+#### Wait until DB sync is completed 100%, Create an AMI from the main-node, we will use this AMI to provision relay nodes
+
+----
+
 ### Stop Cardano-node
 ```bash
 sudo systemctl stop cardano-node
@@ -65,16 +76,6 @@ EOF
 ```bash
 sudo systemctl start cardano-node
 ```
-### Check DB Sync Status
-```bash
-bash $NODE_HOME/gLiveView.sh
-```
-
-----
-
-#### once the DB sync is completed 100%, Create an AMI from the main-node, we will use this AMI to provision relay nodes
-
-----
 ### Run script 05_generate_keys_on_main_node on main_node
 ```bash
 ./oro-stake-pool-github.io/stake_pool_automation_scripts/05_generate_keys_on_main_node.sh
