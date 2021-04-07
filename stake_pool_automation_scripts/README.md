@@ -63,9 +63,14 @@ EOF
 ```bash
 sudo systemctl start cardano-node
 ```
+### Check DB Sync Status
+```bash
+bash $NODE_HOME/gLiveView.sh
+```
+
 ----
 
-#### once the DB sync is completed 100%, Create an AMI from the main-node, we will this AMI to provision relay nodes
+#### once the DB sync is completed 100%, Create an AMI from the main-node, we will use this AMI to provision relay nodes
 
 ----
 ### Run script 05_generate_keys_on_main_node on main_node
