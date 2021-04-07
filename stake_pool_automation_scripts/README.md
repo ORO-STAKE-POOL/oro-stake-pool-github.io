@@ -1,5 +1,7 @@
 ## Please read the [Official documentation](https://docs.cardano.org/projects/cardano-node/en/latest/index.html) to understand the configuration files and different properties.
 
+## Installs Cardano-Node Version - 1.26.1 
+
 ### SSH command run from MAC/Unix terminal
 
 ```bash
@@ -19,7 +21,7 @@ chmod +x oro-stake-pool-github.io/stake_pool_automation_scripts/*
 
 ### Run script 02_build_node_from_source_code
 ```bash
-nohup ./oro-stake-pool-github.io/stake_pool_automation_scripts/02_build_node_from_source_code.sh &
+nohup ./oro-stake-pool-github.io/stake_pool_automation_scripts/02_build_node_and_configure.sh &
 ```
 
 ### Run script 03_create_startup_scripts
