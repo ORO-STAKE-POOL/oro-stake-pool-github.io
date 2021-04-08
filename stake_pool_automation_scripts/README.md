@@ -18,12 +18,12 @@ git clone https://github.com/ORO-STAKE-POOL/oro-stake-pool-github.io.git
 chmod +x oro-stake-pool-github.io/stake_pool_automation_scripts/*
 ```
 
-### Run script 01_install_cardano-node_dependencies - This steps takes 3-5 Min's :timer_clock: to complete
+### Run script 01_install_cardano-node_dependencies - This step takes 3-5 Min's :timer_clock: to complete
 ```bash
 ./oro-stake-pool-github.io/stake_pool_automation_scripts/01_install_cardano-node_dependencies.sh
 ```
 
-### Run script 02_build_node_from_source_code - This steps takes ~1Hr :timer_clock: to complete
+### Run script 02_build_node_from_source_code - This step takes ~1Hr :timer_clock: to complete
 ```bash
 nohup ./oro-stake-pool-github.io/stake_pool_automation_scripts/02_build_node_and_configure.sh &
 ```
@@ -46,7 +46,7 @@ nohup ./oro-stake-pool-github.io/stake_pool_automation_scripts/02_build_node_and
 ./oro-stake-pool-github.io/stake_pool_automation_scripts/04_install_gLiveView_monitoring_tool.sh
 ```
 
-### Check DB Sync Status  - This steps takes 6-8Hrs :timer_clock: to complete
+### Check DB Sync Status  - This step takes 6-8Hrs :timer_clock: to complete
 ```bash
 bash $NODE_HOME/gLiveView.sh
 ```
