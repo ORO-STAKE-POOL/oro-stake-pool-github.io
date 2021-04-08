@@ -33,13 +33,13 @@ nohup ./oro-stake-pool-github.io/stake_pool_automation_scripts/02_build_node_and
 ./oro-stake-pool-github.io/stake_pool_automation_scripts/03_create_startup_scripts.sh
 ```
 ##### Your cardano-node is up and running!!
-> Verify status of the node - `sudo systemctl status cardano-node`
+* Verify status of the node - `sudo systemctl status cardano-node`
 
-> Restart node service - `sudo systemctl reload-or-restart cardano-node`
+* Restart node service - `sudo systemctl reload-or-restart cardano-node`
 
-> Stop node service - `sudo systemctl stop cardano-node`
+* Stop node service - `sudo systemctl stop cardano-node`
 
-> View Node logs - `journalctl --unit=cardano-node --follow`
+* View Node logs - `journalctl --unit=cardano-node --follow`
 
 ### Run script 04_install_gLiveView_monitoring_tool
 ```bash

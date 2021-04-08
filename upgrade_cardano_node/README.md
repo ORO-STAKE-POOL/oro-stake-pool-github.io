@@ -1,4 +1,4 @@
-##[Official release notes](https://github.com/input-output-hk/cardano-node/releases/)
+[Official release notes](https://github.com/input-output-hk/cardano-node/releases/)
 
 ## Upgrade Cardano-Node Version - 1.26.1 (latest)
 
@@ -20,8 +20,10 @@ chmod +x oro-stake-pool-github.io/upgrade_cardano_node/*
 ```bash
 nohup ./oro-stake-pool-github.io/upgrade_cardano_node/upgrade_node_v1.2.6.1.sh &
 ```
-> `jobs` command will display status of the scripts that are running in the background 
+* `jobs` command will display status of the scripts that are running in the background 
 
-> Display execution output of the `upgrade_node_v1.2.6.1.sh` script -  `tail -f nohup.out`
+* Display execution output of the `upgrade_node_v1.2.6.1.sh` script -  `tail -f nohup.out`
+
+Congratulations! Your Cardano Node is upgraded to the latest version. :partying_face:
 
 ##### Note : Future upgrade scripts can be pulled by running `git pull` command.
