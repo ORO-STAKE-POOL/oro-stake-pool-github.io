@@ -2,6 +2,9 @@
 
 ## Installs Cardano-Node Version - 1.26.1 
 
+[![Cardano Stake Pool in AWS](http://www.oroops.com.s3-website-us-east-1.amazonaws.com/images/thumbnail.png)](https://www.youtube.com/watch?v=zvDqN2Wi5-E&list=PLKMe4Qn8pXy7xD4MdoYMktMHkuyPSycGR)
+
+
 ### SSH command run from MAC/Unix terminal
 
 ```bash
