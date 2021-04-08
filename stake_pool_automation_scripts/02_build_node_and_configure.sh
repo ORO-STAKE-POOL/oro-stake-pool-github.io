@@ -15,11 +15,11 @@ cd cardano-node
 git fetch --all --recurse-submodules --tags
 git checkout tags/1.26.1
 
-cabal configure -O0 -w ghc-8.10.2
+cabal configure -O0 -w ghc-8.10.4
 
 echo -e "package cardano-crypto-praos\n flags: -external-libsodium-vrf" > cabal.project.local
 sed -i $HOME/.cabal/config -e "s/overwrite-policy:/overwrite-policy: always/g"
-rm -rf $HOME/git/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.2
+rm -rf $HOME/git/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.4
 
 
 #This steps takes few hours to complete
