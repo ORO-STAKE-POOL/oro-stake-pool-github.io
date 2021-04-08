@@ -14,8 +14,9 @@ error(){
   exit 1
 }
 
+mkdir -p ${HOME}/git
 cd ${HOME}/git || error
-mv -vf ${HOME}/git/cardano-node ${HOME}/git/cardano-node-old || error
+mv -vf ${HOME}/git/cardano-node ${HOME}/git/cardano-node-old || true
 git clone https://github.com/input-output-hk/cardano-node.git || error
 cd cardano-node || error
 
