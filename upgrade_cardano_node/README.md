@@ -2,7 +2,7 @@
 
 ## Upgrade Cardano-Node Version - 1.26.1 (latest)
 
-[![Cardano Stake Pool in AWS](http://www.oroops.com.s3-website-us-east-1.amazonaws.com/images/upgrade_node.png)](https://www.youtube.com/watch?v=zvDqN2Wi5-E&list=PLKMe4Qn8pXy7xD4MdoYMktMHkuyPSycGR)
+[![Cardano Stake Pool in AWS](http://www.oroops.com.s3-website-us-east-1.amazonaws.com/images/upgrade_node.png)](https://youtu.be/9Y6ZRZB4s_o)
 
 ### SSH to the relay/main node
 
