@@ -1,5 +1,5 @@
 ---
-# Copyright 20201 ORO STAKE POOL
+# Copyright 2021 ORO STAKE POOL
 AWSTemplateFormatVersion: '2010-09-09'
 Description: 'VPC: public and private subnets in three availability zones'
 Metadata:

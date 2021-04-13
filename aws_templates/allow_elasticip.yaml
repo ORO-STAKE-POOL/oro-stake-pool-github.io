@@ -1,0 +1,32 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'Create custom policy and IAM role'
+Resources:
+  AllowRelayElasticIp:
+    Type: AWS::IAM::ManagedPolicy
+    Properties:
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Action:
+                - 'ec2:DescribeAddresses'
+                - 'ec2:AllocateAddress'
+                - 'ec2:DescribeInstances'
+                - 'ec2:AssociateAddress'
+            Resource: "*"
+
+  RootRole:
+      Type: 'AWS::IAM::Role'
+      Properties:
+        AssumeRolePolicyDocument:
+          Version: '2012-10-17'
+          Statement:
+            - Effect: Allow
+              Principal:
+                Service:
+                  - ec2.amazonaws.com
+              Action:
+                - 'sts:AssumeRole'
+        ManagedPolicyArns:
+          - !Ref AllowRelayElasticIp
+        RoleName: relay_elasticip
