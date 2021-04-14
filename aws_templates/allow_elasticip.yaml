@@ -14,7 +14,6 @@ Resources:
                 - 'ec2:DescribeInstances'
                 - 'ec2:AssociateAddress'
             Resource: "*"
-
   RootRole:
       Type: 'AWS::IAM::Role'
       Properties:
@@ -30,3 +29,10 @@ Resources:
         ManagedPolicyArns:
           - !Ref AllowRelayElasticIp
         RoleName: relay_elasticip
+
+  EC2_EIP:
+      Type: "AWS::IAM::InstanceProfile"
+      Properties:
+        Path: "/"
+        Roles:
+          - Ref: "RootRole"

@@ -1,7 +1,7 @@
 #!/bin/bash
 INSTANCE_ID=$(/usr/bin/curl -s http://169.254.169.254/latest/meta-data/instance-id)
 MAXWAIT=3
-ALLOC_ID="eipalloc-064335d9ef05608bc" #Modify this 
+ALLOC_ID="eipalloc-064335d9ef05608bc" #Modify this
 AWS_DEFAULT_REGION=$(/usr/bin/curl -s http://169.254.169.254/latest/meta-data/placement/availability-zone | sed 's/\(.*\)[a-z]/\1/')
 
 apt-get update -y
