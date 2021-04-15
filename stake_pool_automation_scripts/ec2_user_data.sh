@@ -1,11 +1,12 @@
 #!/bin/bash
 INSTANCE_ID=$(/usr/bin/curl -s http://169.254.169.254/latest/meta-data/instance-id)
 MAXWAIT=3
-ALLOC_ID="eipalloc-064335d9ef05608bc" #Modify this
 AWS_DEFAULT_REGION=$(/usr/bin/curl -s http://169.254.169.254/latest/meta-data/placement/availability-zone | sed 's/\(.*\)[a-z]/\1/')
 
 apt-get update -y
-apt-get install awscli -y
+apt-get install jq awscli -y
+
+ALLOC_ID=$(aws ec2 describe-addresses --region $AWS_DEFAULT_REGION --filters Name=tag:Name,Values=relay_node | jq -r '.Addresses[].AllocationId')
 
 # Make sure the EIP is free
 echo "Checking if EIP with ALLOC_ID[$ALLOC_ID] is free...."
