@@ -1,6 +1,6 @@
 ## Please read the [Official documentation](https://docs.cardano.org/projects/cardano-node/en/latest/index.html) to understand the configuration files and different properties.
 
-## Installs Cardano-Node Version - 1.26.1 
+## Installs Cardano-Node Version - 1.26.2
 
 [![Cardano Stake Pool in AWS](http://www.oroops.com.s3-website-us-east-1.amazonaws.com/assets/images/thumbnail.png)](https://www.youtube.com/channel/UC03xhqQTPQL035gNjeuTWGg)
 

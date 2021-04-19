@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Author: ORO STAKE POOL || Telegram Channel: https://t.me/oro_pool || DISCORD: https://discord.gg/DGZrM4VC5P
-# Installs Cardano-Node GIT TAG - 1.26.1
+# Installs Cardano-Node GIT TAG - 1.26.2
 
 start=`date +%s.%N`
 
@@ -13,7 +13,7 @@ cd $HOME/git
 git clone https://github.com/input-output-hk/cardano-node.git
 cd cardano-node
 git fetch --all --recurse-submodules --tags
-git checkout tags/1.26.1
+git checkout tags/1.26.2
 
 cabal configure -O0 -w ghc-8.10.4
 
