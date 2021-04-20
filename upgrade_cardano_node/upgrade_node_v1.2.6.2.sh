@@ -16,6 +16,13 @@ error(){
 
 mkdir -p ${HOME}/git
 cd ${HOME}/git || error
+
+if [ -d $HOME/git/cardano-node-old ]; then
+        echo "Removing old binaries: cardano-node-old"
+        rm -rf $HOME/git/cardano-node-old
+        ls -ltr $HOME/git/
+fi
+
 mv -vf ${HOME}/git/cardano-node ${HOME}/git/cardano-node-old || true
 git clone https://github.com/input-output-hk/cardano-node.git || error
 cd cardano-node || error
